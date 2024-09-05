@@ -3,15 +3,11 @@
 import { Category } from "@prisma/client";
 
 import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
-
 interface catprops {
   data: Category[];
 }
 
 export const Categories = ({ data }: catprops) => {
-  const router = useRouter();
-
   return (
     <div className="w-full overflow-x-auto space-x-2 flex p-1">
       <button
